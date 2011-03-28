@@ -52,6 +52,93 @@ html, body {
   vertical-align: middle;
 }
 
+/* view page */
+
+#minilogo {
+  text-align: center;
+  font-family: 'Permanent Marker', helvetica, arial, sans-serif;
+  text-transform: uppercase;
+  vertical-align: middle;
+  font-size: 20px;
+  color: #000;
+  padding-top: 60px;
+  padding-bottom: 30px;
+  opacity: 0.3;
+}
+
+#minilogo:before {
+  width: 45px;
+  height: 60px;
+  margin-right: 15px;
+  background: url(/images/logo_small.png);
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#view-container {
+  padding-top: 60px;
+
+  display: box;
+  box-orient: horizontal;
+  box-pack: justify;
+  box-align: stretch;
+
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-pack: justify;
+  -webkit-box-align: stretch;
+
+  display: -moz-box;
+  -moz-box-orient: horizontal;
+  -moz-box-pack: justify;
+  -moz-box-align: stretch;
+}
+
+#view-container > * {
+  display: block;
+
+          box-flex: 0;
+  -webkit-box-flex: 0;
+     -moz-box-flex: 0;
+}
+
+#image-container {
+  text-align: center;
+
+          box-flex: 1;
+  -webkit-box-flex: 1;
+     -moz-box-flex: 1;
+}
+
+#image-container figure {
+  display: inline-block;
+  background-color: #fff;
+  padding: 30px 30px 20px 30px;
+
+          transform: rotate(-5deg);
+  -webkit-transform: rotate(-5deg);
+     -moz-transform: rotate(-5deg);
+
+          box-shadow: 0 5px 0 rgba(0,0,0,0.1);
+  -webkit-box-shadow: 0 5px 0 rgba(0,0,0,0.1);
+     -moz-box-shadow: 0 5px 0 rgba(0,0,0,0.1);
+}
+
+#image-container img {
+  max-width: 400px;
+  max-height: 400px;
+}
+
+#image-container figcaption {
+  font-family: 'Permanent Marker', helvetica, arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 30px;
+  color: #000;
+  text-align: center;
+  padding-top: 10px;
+}
+
 /* creation form */
 
 .createform-step {
@@ -132,7 +219,7 @@ html, body {
   text-transform: uppercase;
   text-align: center;
   font-size: 30px;
-  padding: 15px 30px;
+  padding: 15px 15px;
   width: 10em;
   
           box-sizing: content-box;
@@ -184,6 +271,28 @@ html, body {
 .createform-button:active {
   margin-top: 2px;
   padding: 14px 30px;
+
+          box-shadow: 0 3px 0 rgba(0,0,0,0.1), inset 0 -3px 0 rgba(0,0,0,0.4);
+  -webkit-box-shadow: 0 3px 0 rgba(0,0,0,0.1), inset 0 -3px 0 rgba(0,0,0,0.4);
+     -moz-box-shadow: 0 3px 0 rgba(0,0,0,0.1), inset 0 -3px 0 rgba(0,0,0,0.4);
+}
+
+/* smaller creation form */
+
+.createform-input.small,
+.createform-button.small {
+  font-size: 20px;
+  padding: 10px 20px;
+  width: 7em;
+  
+          box-flex: 1;
+  -webkit-box-flex: 1;
+     -moz-box-flex: 1;
+}
+
+.createform-button.small:active {
+  margin-top: 2px;
+  padding: 9px 20px;
 
           box-shadow: 0 3px 0 rgba(0,0,0,0.1), inset 0 -3px 0 rgba(0,0,0,0.4);
   -webkit-box-shadow: 0 3px 0 rgba(0,0,0,0.1), inset 0 -3px 0 rgba(0,0,0,0.4);
