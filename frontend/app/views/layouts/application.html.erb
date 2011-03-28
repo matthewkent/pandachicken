@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>pandachicken</title>
+  <%= stylesheet_link_tag :all %>
+  <%= csrf_meta_tag %>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js" type="text/javascript"></script>
+  <%= javascript_include_tag 'application' %>
+  <link href="http://yui.yahooapis.com/3.3.0/build/cssreset/reset-min.css" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<div id="outer">
+<div id="container">
+  <%= yield %>
+  
+  <div id="footer">
+    &copy; 2011, pandachicken.org
+  </div>
+</div>
+</div>
+
+</body>
+</html>
