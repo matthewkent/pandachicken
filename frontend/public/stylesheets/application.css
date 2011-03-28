@@ -1,0 +1,191 @@
+html, body {
+  height: 100%;
+  font-size: 20px;
+  line-height: 30px;
+  font-family: 'helvetica neue', helvetica, arial, sans-serif;
+  font-weight: 100;
+  color: #888;
+}
+
+#outer {
+  min-height: 100%;
+  background: #eee url(/images/bg_noise.png) repeat scroll 50% 0;
+}
+
+#container {
+  height: 100%;
+  width: 800px;
+  margin: 0 auto;
+}
+
+#footer {
+  text-align: right;
+  font-size: 15px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+/* main page */
+
+#logo {
+  text-align: center;
+  font-family: 'Permanent Marker', helvetica, arial, sans-serif;
+  text-transform: uppercase;
+  vertical-align: middle;
+  font-size: 60px;
+  color: #590533;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+          text-shadow: 0 5px 0 rgba(0,0,0,0.1);
+  -webkit-text-shadow: 0 5px 0 rgba(0,0,0,0.1);
+     -moz-text-shadow: 0 5px 0 rgba(0,0,0,0.1);
+}
+
+#logo:before {
+  width: 125px;
+  height: 162px;
+  margin-right: 15px;
+  background: url(/images/logo.png);
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* creation form */
+
+.createform-step {
+  padding-bottom: 15px;
+
+  display: box;
+  box-orient: horizontal;
+  box-pack: justify;
+  box-align: center;
+
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-pack: justify;
+  -webkit-box-align: center;
+
+  display: -moz-box;
+  -moz-box-orient: horizontal;
+  -moz-box-pack: justify;
+  -moz-box-align: center;
+}
+
+.createform-step > * {
+  display: block;
+
+          box-flex: 0;
+  -webkit-box-flex: 0;
+     -moz-box-flex: 0;
+}
+
+.createform-marker {
+  vertical-align: middle;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  overflow: hidden;
+  padding: 0.5em;
+  font-family: 'Permanent Marker', helvetica, arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 30px;
+  background-color: #590533;
+  color: #fff;
+  text-align: center;
+
+          border-radius: 100px;
+  -webkit-border-radius: 100px;
+     -moz-border-radius: 100px;
+
+          text-shadow: 0 -2px 0 rgba(0,0,0,0.4);
+  -webkit-text-shadow: 0 -2px 0 rgba(0,0,0,0.4);
+     -moz-text-shadow: 0 -2px 0 rgba(0,0,0,0.4);
+
+          box-shadow: 0 5px 0 rgba(0,0,0,0.1), inset 0 -5px 0 rgba(0,0,0,0.4);
+  -webkit-box-shadow: 0 5px 0 rgba(0,0,0,0.1), inset 0 -5px 0 rgba(0,0,0,0.4);
+     -moz-box-shadow: 0 5px 0 rgba(0,0,0,0.1), inset 0 -5px 0 rgba(0,0,0,0.4);
+}
+
+.createform-description {
+  vertical-align: middle;
+  margin: 15px;
+  
+          box-flex: 1;
+  -webkit-box-flex: 1;
+     -moz-box-flex: 1;
+}
+
+.createform-description em {
+  font-weight: normal;
+  color: #b32773;
+}
+
+/* creation form */
+
+.createform-input,
+.createform-button {
+  vertical-align: middle;
+  border: 0;
+  font-family: 'Permanent Marker', helvetica, arial, sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 30px;
+  padding: 15px 30px;
+  width: 10em;
+  
+          box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+     -moz-box-sizing: content-box;
+
+          border-radius: 15px;
+  -webkit-border-radius: 15px;
+     -moz-border-radius: 15px;  
+}
+
+.createform-input:focus {
+  outline: 0;
+
+          box-shadow: inset 0 5px 0 #b32773;
+  -webkit-box-shadow: inset 0 5px 0 #b32773;
+     -moz-box-shadow: inset 0 5px 0 #b32773;
+}
+
+.createform-input {
+          box-shadow: inset 0 5px 0 rgba(0,0,0,0.1);
+  -webkit-box-shadow: inset 0 5px 0 rgba(0,0,0,0.1);
+     -moz-box-shadow: inset 0 5px 0 rgba(0,0,0,0.1);
+}
+
+.createform-button {
+  background-color: #b32773;
+  color: #fff;
+  
+          text-shadow: 0 -2px 0 rgba(0,0,0,0.4);
+  -webkit-text-shadow: 0 -2px 0 rgba(0,0,0,0.4);
+     -moz-text-shadow: 0 -2px 0 rgba(0,0,0,0.4);
+
+          box-shadow: 0 5px 0 rgba(0,0,0,0.1), inset 0 -5px 0 rgba(0,0,0,0.4);
+  -webkit-box-shadow: 0 5px 0 rgba(0,0,0,0.1), inset 0 -5px 0 rgba(0,0,0,0.4);
+     -moz-box-shadow: 0 5px 0 rgba(0,0,0,0.1), inset 0 -5px 0 rgba(0,0,0,0.4);
+}
+
+.createform-button:hover {
+  background-color: #c73c88;
+}
+
+.createform-button:active,
+.createform-button:focus {
+  outline: 0;
+  background-color: #97195e;
+}
+
+.createform-button:active {
+  margin-top: 2px;
+  padding: 14px 30px;
+
+          box-shadow: 0 3px 0 rgba(0,0,0,0.1), inset 0 -3px 0 rgba(0,0,0,0.4);
+  -webkit-box-shadow: 0 3px 0 rgba(0,0,0,0.1), inset 0 -3px 0 rgba(0,0,0,0.4);
+     -moz-box-shadow: 0 3px 0 rgba(0,0,0,0.1), inset 0 -3px 0 rgba(0,0,0,0.4);
+}
