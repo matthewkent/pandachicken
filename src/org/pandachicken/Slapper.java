@@ -9,6 +9,8 @@ import static com.googlecode.javacv.cpp.opencv_imgproc.cvCvtColor;
 import static com.googlecode.javacv.cpp.opencv_objdetect.cvHaarDetectObjects;
 
 import java.awt.Graphics2D;
+import java.awt.Rectangle;
+import java.awt.TexturePaint;
 import java.awt.image.BufferedImage;
 
 import com.googlecode.javacpp.Loader;
@@ -56,7 +58,10 @@ public class Slapper {
 		g.drawImage(dest, 0, 0, dest.getWidth(), dest.getHeight(), null);
 		
 		// 4. draw source face onto dest
-		g.drawImage(resizedSourceFace, destFace.x(), destFace.y(), destFace.width(), destFace.height(), null);
+		Rectangle bounds = new Rectangle(destFace.x(), destFace.y(), destFace.width(), destFace.height());
+		TexturePaint tp = new TexturePaint(resizedSourceFace, bounds);
+		g.setPaint(tp);
+		g.fillOval(destFace.x(), destFace.y(), destFace.width(), destFace.height());
 		g.dispose();
 		
 		return output;
